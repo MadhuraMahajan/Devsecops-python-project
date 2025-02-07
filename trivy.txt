@@ -1,0 +1,52 @@
+
+requirements.txt (pip)
+======================
+Total: 12 (UNKNOWN: 0, LOW: 0, MEDIUM: 3, HIGH: 8, CRITICAL: 1)
+
+┌──────────┬─────────────────────┬──────────┬────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
+│ Library  │    Vulnerability    │ Severity │ Status │ Installed Version │ Fixed Version │                            Title                             │
+├──────────┼─────────────────────┼──────────┼────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ Pillow   │ CVE-2023-50447      │ CRITICAL │ fixed  │ 9.1.0             │ 10.2.0        │ pillow: Arbitrary Code Execution via the environment         │
+│          │                     │          │        │                   │               │ parameter                                                    │
+│          │                     │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-50447                   │
+│          ├─────────────────────┼──────────┤        │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│          │ CVE-2022-30595      │ HIGH     │        │                   │ 9.1.1         │ python-pillow: heap buffer overflow in crafted TGA file      │
+│          │                     │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2022-30595                   │
+│          ├─────────────────────┤          │        │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│          │ CVE-2022-45198      │          │        │                   │ 9.2.0         │ Pillow before 9.2.0 performs Improper Handling of Highly     │
+│          │                     │          │        │                   │               │ Compressed GI ...                                            │
+│          │                     │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2022-45198                   │
+│          ├─────────────────────┤          │        │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│          │ CVE-2023-44271      │          │        │                   │ 10.0.0        │ python-pillow: uncontrolled resource consumption when        │
+│          │                     │          │        │                   │               │ textlength in an ImageDraw instance operates on...           │
+│          │                     │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-44271                   │
+│          ├─────────────────────┤          │        │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│          │ CVE-2023-4863       │          │        │                   │ 10.0.1        │ libwebp: Heap buffer overflow in WebP Codec                  │
+│          │                     │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-4863                    │
+│          ├─────────────────────┤          │        │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│          │ CVE-2024-28219      │          │        │                   │ 10.3.0        │ python-pillow: buffer overflow in _imagingcms.c              │
+│          │                     │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-28219                   │
+│          ├─────────────────────┤          │        │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│          │ GHSA-56pw-mpj4-fxww │          │        │                   │ 10.0.1        │ Bundled libwebp in Pillow vulnerable                         │
+│          │                     │          │        │                   │               │ https://github.com/advisories/GHSA-56pw-mpj4-fxww            │
+├──────────┼─────────────────────┤          │        ├───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ Werkzeug │ CVE-2024-34069      │          │        │ 2.3.7             │ 3.0.3         │ python-werkzeug: user may execute code on a developer's      │
+│          │                     │          │        │                   │               │ machine                                                      │
+│          │                     │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-34069                   │
+│          ├─────────────────────┼──────────┤        │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│          │ CVE-2023-46136      │ MEDIUM   │        │                   │ 3.0.1, 2.3.8  │ python-werkzeug: high resource consumption leading to denial │
+│          │                     │          │        │                   │               │ of service                                                   │
+│          │                     │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-46136                   │
+│          ├─────────────────────┤          │        │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│          │ CVE-2024-49766      │          │        │                   │ 3.0.6         │ werkzeug: python-werkzeug: Werkzeug safe_join not safe on    │
+│          │                     │          │        │                   │               │ Windows                                                      │
+│          │                     │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-49766                   │
+│          ├─────────────────────┤          │        │                   │               ├──────────────────────────────────────────────────────────────┤
+│          │ CVE-2024-49767      │          │        │                   │               │ werkzeug: python-werkzeug: Werkzeug possible resource        │
+│          │                     │          │        │                   │               │ exhaustion when parsing file data in forms...                │
+│          │                     │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-49767                   │
+├──────────┼─────────────────────┼──────────┤        ├───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ gunicorn │ CVE-2024-1135       │ HIGH     │        │ 20.1.0            │ 22.0.0        │ python-gunicorn: HTTP Request Smuggling due to improper      │
+│          │                     │          │        │                   │               │ validation of Transfer-Encoding headers                      │
+│          │                     │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-1135                    │
+└──────────┴─────────────────────┴──────────┴────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
